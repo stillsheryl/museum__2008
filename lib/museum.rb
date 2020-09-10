@@ -49,4 +49,9 @@ class Museum
     players = ticket_lottery_contestants(exhibit)
     players.sample.name
   end
+
+  def announce_lottery_winner(exhibit)
+    winner = draw_lottery_winner(exhibit)
+    "#{winner} has won the #{exhibit.name} exhibit lottery"
+  end
 end
